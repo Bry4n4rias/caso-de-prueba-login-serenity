@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.actions.Open;
 
 public class NavigateToLogin {
     public static  Performable automationHome(){
-        return Task.where("{0} opens the AutomationPractice home page",
+        return Task.where("{0} opens the AutomationPractice login page",
                 Open.browserOn().the(AutomationPracticeHomePage.class));
     }
 
