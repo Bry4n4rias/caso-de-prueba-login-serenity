@@ -1,17 +1,18 @@
-package starter.dashboard;
+package starter.checkout;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-public class UserName implements Question<String> {
+
+public class ConfirmedOrder implements Question<String> {
 
     public static Question<String> value(){
-        return new UserName();
+        return new ConfirmedOrder();
     }
 
     @Override
     public String answeredBy(Actor actor) {
-        return BrowseTheWeb.as(actor).find(DataUserScreen.USER_NAME).getText();
+        return BrowseTheWeb.as(actor).find(ConfirmedOrderScreen.CONFIRMED_ORDER).getText();
     }
 }

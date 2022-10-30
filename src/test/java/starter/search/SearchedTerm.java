@@ -1,4 +1,4 @@
-package starter.dashboard;
+package starter.search;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
@@ -12,6 +12,6 @@ public class SearchedTerm implements Question<String> {
 
     @Override
     public String answeredBy(Actor actor) {
-        return BrowseTheWeb.as(actor).find(SearchedTermOverview.SEARCHED_TERM).getText().trim();
+        return BrowseTheWeb.as(actor).find(SearchedTermScreen.SEARCHED_TERM).getText().trim();
     }
 }

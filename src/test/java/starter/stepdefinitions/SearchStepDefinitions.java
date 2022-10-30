@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import starter.dashboard.SearchedTerm;
+import starter.search.SearchedTerm;
 import starter.navigation.NavigateToSearch;
 import starter.search.DoSearch;
 
