@@ -7,6 +7,13 @@ The tests in this example are run in the Automation Practice Store website and a
 
 By default, the tests run in Chrome, so it is necessary to have the latest version of the chrome driver installed and to have it added as a variable in the system path.
 
+## Recomendations to run the test:
+Every time the test is going to be run, the email that is being passed through the "email" variable in the following file must be changed, so that it does not mark an error due to already registered email.
+
+```
+java/starter/stepdefinitions/RegisterStepDefinitions.java
+```
+
 ## Requirements:
 
 To run the project you need Java JDK 1.8 and Gradle preferably with version 4.7.
@@ -23,8 +30,6 @@ If shows the term 'gradlew' is not recognized as a cmdlet name:
 ```
 .\gradlew
 ```
-## Recommendations for running the tests:
-
 
 
 
