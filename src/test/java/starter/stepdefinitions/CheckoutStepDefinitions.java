@@ -1,8 +1,11 @@
 package starter.stepdefinitions;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.screenplay.actors.OnStage;
+import net.serenitybdd.screenplay.actors.OnlineCast;
 import starter.checkout.ConfirmedOrder;
 import starter.checkout.DoCheckout;
 import starter.login.DoLogin;
@@ -17,6 +20,11 @@ import static org.hamcrest.core.IsEqual.equalTo;
 public class CheckoutStepDefinitions {
 
     String name;
+
+    @Before
+    public void setTheStage() {
+        OnStage.setTheStage(new OnlineCast());
+    }
     @Given("^(.*) wants to buy a product")
     public void wants_to_buy_a_product(String name) {
         this.name = name;

@@ -1,8 +1,11 @@
 package starter.stepdefinitions;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.screenplay.actors.OnStage;
+import net.serenitybdd.screenplay.actors.OnlineCast;
 import starter.checkout.DoCheckout;
 import starter.login.DoLogin;
 import starter.navigation.NavigateToLogin;
@@ -19,6 +22,11 @@ import static org.hamcrest.core.IsEqual.equalTo;
 public class WishListStepDefinitions {
 
     String name;
+
+    @Before
+    public void setTheStage() {
+        OnStage.setTheStage(new OnlineCast());
+    }
 
     @Given("^(.*) wants to add a product to wishlist")
     public void wants_to_add_a_product_to_wishlist(String name) {
