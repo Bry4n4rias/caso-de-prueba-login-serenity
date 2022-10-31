@@ -37,7 +37,7 @@ public class WishListStepDefinitions {
     public void he_logs_and_complete_all_steps_to_add_the_product() {
         theActorCalled(name).attemptsTo(
                 // login
-                NavigateToLogin.automationHome(),
+                NavigateToLogin.automationLogin(),
                 DoLogin.withCredentials("brayank012@gmail.com", "921202"),
 
                 NavigateToSearch.automationSearchPage(),

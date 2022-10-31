@@ -7,7 +7,6 @@ import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import starter.dashboard.UserName;
-import starter.login.DoLogin;
 import starter.navigation.NavigateToLogin;
 import starter.register.DoRegister;
 
@@ -33,7 +32,7 @@ public class RegisterStepDefinitions {
     public void he_sends_their_valid_data() {
 
         theActorCalled(name).attemptsTo(
-                NavigateToLogin.automationHome(),
+                NavigateToLogin.automationLogin(),
 
                 DoRegister.withDataOfRegister("brayank155@gmail.com", "Daniel", "Suarez", "921202", "2", "2", "25", "Calle 50 copacabana", "Medellin", "2", "00000", "1", "3135645492")
 

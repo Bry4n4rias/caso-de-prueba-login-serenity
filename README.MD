@@ -1,31 +1,30 @@
 
-##**README SERENITY WEB TRAINING**
+## README SERENITY TEST
 
-##**Run tests with gradle:**
+A project that exemplifies the use of the serenity screenplay pattern with cucumber and gradle.
 
-```
-./gradlew clean test
-```
+The tests in this example are run in the Automation Practice Store website and as a technical test for the company Choucair.
 
-To run tests in Firefox:
+By default, the tests run in Chrome, so it is necessary to have the latest version of the chrome driver installed and to have it added as a variable in the system path.
 
-```
-./gradlew clean test -Dwebdriver.driver=firefox
-```
+## Requirements:
 
-In windows:
-```
-gradlew clean test
-```
+To run the project you need Java JDK 1.8 and Gradle preferably with version 4.7.
 
-##**Run tests with Maven:**
+
+**Run tests with gradle on chrome:**
 
 ```
-mvn clean verify -Ddriver=firefox
+gradlew clean test -Pwebdriver.driver=chrome -Denvironment=prod
 ```
-or try this:
+
+If shows the term 'gradlew' is not recognized as a cmdlet name:
 
 ```
-mvn clean verify -Dwebdriver.driver=firefox
+.\gradlew
 ```
+## Recommendations for running the tests:
+
+
+
 

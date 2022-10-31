@@ -35,7 +35,7 @@ public class CheckoutStepDefinitions {
 
         theActorCalled(name).attemptsTo(
                 // login
-                NavigateToLogin.automationHome(),
+                NavigateToLogin.automationLogin(),
                 DoLogin.withCredentials("brayank012@gmail.com", "921202"),
                 // go to home and add product
                 NavigateToSearch.automationSearchPage(),

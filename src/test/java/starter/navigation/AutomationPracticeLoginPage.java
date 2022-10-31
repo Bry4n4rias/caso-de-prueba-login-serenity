@@ -6,5 +6,5 @@ import net.thucydides.core.annotations.DefaultUrl;
 
 
 @DefaultUrl("http://automationpractice.com/index.php?controller=authentication&back=my-account")
-public class AutomationPracticeHomePage extends PageObject {
+public class AutomationPracticeLoginPage extends PageObject {
 }
