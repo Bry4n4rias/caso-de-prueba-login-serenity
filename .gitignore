@@ -42,7 +42,7 @@ ted by https://www.toptal.com/developers/gitignore/api/intellij+all
 # .idea/*.iml
 # .idea/modules
 # *.iml
-# *.ipr
+# *.ipre
 
 # CMake
 cmake-build-*/
