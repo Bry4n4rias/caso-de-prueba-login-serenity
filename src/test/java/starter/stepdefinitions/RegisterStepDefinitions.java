@@ -34,7 +34,7 @@ public class RegisterStepDefinitions {
         theActorCalled(name).attemptsTo(
                 NavigateToLogin.automationLogin(),
 
-                DoRegister.withDataOfRegister("brayank155@gmail.com", "Daniel", "Suarez", "921202", "2", "2", "25", "Calle 50 copacabana", "Medellin", "2", "00000", "1", "3135645492")
+                DoRegister.withDataOfRegister("brayan085@gmail.com", "Daniel", "Suarez", "921202", "2", "2", "25", "Calle 50 copacabana", "Medellin", "2", "00000", "1", "3135645492")
 
         );
 
