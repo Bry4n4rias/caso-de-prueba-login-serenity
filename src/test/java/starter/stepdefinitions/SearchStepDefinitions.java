@@ -17,7 +17,6 @@ import static org.hamcrest.core.IsEqual.equalTo;
 
 
 public class SearchStepDefinitions {
-
     String name;
 
     @Before
